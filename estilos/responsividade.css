@@ -1,0 +1,83 @@
+@media (max-width: 500px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .city {
+        width: 95%;
+        height: 24vh;
+        margin: 2%;
+    }
+    p{
+    font-size: 5vw;
+    }
+    h3{
+    font-size: 6vw;
+    }
+    .switch {
+      width: 45%;
+      height: 6vh; 
+
+      font-size: 14px;
+    }
+    .custom-select {
+      width: 35%;
+    }
+    
+  }
+  
+ 
+  @media (min-width: 501px) and (max-width: 1024px) {
+    .city {
+        width: 49%;
+        height: 15vh;
+    }
+    p{
+    font-size: 3vw;
+    }
+    h3{
+    font-size: 3vw;
+    }
+    .modal-content {
+        width: 95%;
+        border-radius: 10px;
+        padding: 2%;
+      }
+      
+      #titulo {
+        margin: 2%;
+        font-size: 18px;
+      }
+      
+      th,
+      td {
+        padding: 8px 10px;
+        font-size: 14px;
+      }
+      
+      .success-icon {
+        width: 18px;
+      }
+      
+      .icon {
+        width: 3vw;
+      }
+      .tooltip-text{
+        width: 12vw;
+      }
+      .switch {
+        width: 37%;
+        height: 4vh;
+        font-size: 14px;
+      }
+    .custom-select {
+    width: 35%;
+    }
+    .top-icon {
+      width: 8vw;
+      
+    }
+    
+
+  } 

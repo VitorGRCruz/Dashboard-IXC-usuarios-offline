@@ -1,0 +1,251 @@
+@font-face {
+  font-family: "Commissioner";
+  src: url("../assets/fonts/Commissioner-SemiBold.ttf") format("truetype");
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #00020f;
+  font-family: "Commissioner";
+
+}
+
+.content {
+  flex-grow: 1;
+  margin: 0.5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.city {
+  display: flex;
+  background-color: #0e26df;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+   margin: 0.5%;
+  border-radius: 1.2vw;
+  cursor: pointer;
+  transition: transform 0.2s;
+  backdrop-filter: brightness(1.2);
+  overflow: hidden;
+}
+.bloco_menor{
+  width: 13vw;
+  height: 8vh;
+  font-size: 12px;
+}
+.bloco_medio{
+  width: 15vw;
+  height: 12vh;
+  font-size: 16px;
+}
+.bloco_padrao{
+  width: 19%;
+  height: 15vh;
+  font-size: 26px;
+}
+
+.city:hover {
+  transform: scale(1.08);
+}
+
+h3 {
+  margin: 0;
+  letter-spacing: 2px;
+  border-color: #595050;
+  word-break: break-all;
+
+}
+
+h2 {
+  margin: 1%; 
+  border-color: #595050;
+}
+
+.conteudo {
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  color: #e6e5e3;
+}
+
+.conteudo2 {
+  text-shadow: 1px 1px 3px black;
+
+}
+
+.laranja {
+  background: linear-gradient(to right, #ff6200 0%, #ff3c00 50%, #ff8c00 100%);
+}
+
+.amarelo {
+  background: linear-gradient(to right, #f6cd27 0%, #ffae00 30%, #f1ab15 75%, #e3bc21 100%);
+}
+
+
+.vermelho {
+  background-color: #8a0505;
+  /*background-color: #ff0000;
+  animation: vermelho_piscar 2s infinite; */
+}
+
+@keyframes vermelho_piscar {
+  0% {
+    background-color: #df0e0e;
+  }
+
+  50% {
+    background-color: #8a0505;
+  }
+  100% {
+    background-color: #df0e0e;
+  }
+}
+.verde {
+  background: linear-gradient(to right, #0fcd01 0%, #0fb303 50%, #40f333 100%);
+}
+
+.header {
+  max-width: 100%;
+  display: flex;
+  padding: 1%;
+  justify-content: space-between;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 14%;
+  height: 6vh; 
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "Todos offline";
+  height: 100%;
+  width: 50%;
+  left: 0;
+  bottom: 0;
+  background-color: #6721f3;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:after {
+  position: absolute;
+  content: "Não Desliga";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider:before {
+  background-color: #ccc;
+  color: #333;
+}
+
+input:checked+.slider:after {
+  background-color: #6721f3;
+  color: white;
+}
+
+.slider.round,
+.slider.round:before,
+.slider.round:after {
+  border-radius: 3vw;
+}
+
+.custom-select {
+  position: relative;
+  width: 15%;
+}
+
+.select-label {
+  padding: 5%;
+  background-color: #ccc;
+  color: #333;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.select-label:hover {
+  background-color: #b0aeae;
+}
+
+.select-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  display: none;
+  background-color: #6721f3;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.select-option {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.select-option:hover {
+  background-color: #360e85;
+}
+.visivel_oculto {
+  cursor: pointer;
+}
+.top-icon {
+  display: none;
+  position: fixed;
+  top: 2%;
+  left: 50%;
+  width: 2vw;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 9999;
+}
+.header.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  display: none;
+}

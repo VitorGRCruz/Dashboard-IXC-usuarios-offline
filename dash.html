@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dashboard</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="./estilos/estilos.css">
+  <link rel="stylesheet" href="./estilos/estilos_modal.css">
+  <link rel="stylesheet" href="./estilos/responsividade.css">
+</head>
+
+<body>
+  <div class="header">
+
+
+    <label class="switch">
+      <input type="checkbox" id="toggle">
+      <span class="slider round"></span>
+    </label>
+    <img src="./assets/midia/visivel.png" class='visivel_oculto' onclick="hideHeader()"></img>
+
+    <div class="custom-select">
+      <div class="select-label" onclick="toggleOptions()">Selecione uma opção</div>
+      <div class="select-options" id="selectOptions">
+        <div class="select-option" onclick="selectOption(this,'cidades')">Cidades</div>
+        <div class="select-option" onclick="selectOption(this,'presp')">Pres.
+          Prudente</div>
+        <div class="select-option" onclick="selectOption(this,'franca')">Franca</div>
+      </div>
+    </div>
+  </div>
+  <img src="./assets/midia/oculto.png" class='top-icon' onclick="showHeader()"></img>
+
+
+
+  <div class="content" id="dashboard">
+  </div>
+
+  <!---------------MODAL--------------------->
+
+  <div id="modal_clientes" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="titulo"></h3>
+      <table id="tabela_clientes">
+
+      </table>
+      <button id="fechar">Fechar</button>
+    </div>
+  </div>
+  <!---------------/MODAL--------------------->
+  <script src="./config/abrir.js"></script>
+  <script src="./config/alternarDash.js"></script>
+</body>
+
+</html>
