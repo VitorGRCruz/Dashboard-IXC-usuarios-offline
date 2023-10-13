@@ -2,11 +2,11 @@
 ## Este é um projeto feito para testar meus conhecimentos nas tecnologias e ferramentas utilizadas. O objetivo é criar um painel de usuários offline na rede, usando dados filtrados do banco de dados da IXC SOFT. Ele agrupa os clientes por cidades ou regiões pré-determinadas, contando com uma interface moderna, intuitiva e dinâmica.
 Para provedores de internet que utilizam os sistemas IXC SOFT, pode ser útil para oferecer o suporte aos usuários com mais eficiencia ainda, o controle sobre problemas envolvendo desconexões na rede pode ser acompanhado em tempo real nesse painel junto aos detalhes da região selecionada, listando os usuários afetados e seus respectivos dados(horário da queda, endereço, telefone, concentrador, endereço MAC do dispositivo, registros de ordem de serviço em andamento).
 
-Pré-requisitos
-Antes de começar a usar este projeto, certifique-se de que você tenha o seguinte:
-Servidor web (por exemplo, Apache, Nginx) configurado para executar PHP.
-Acesso ao banco de dados ixcprovedor do ixc soft.
-Conhecimento de HTML, CSS, SQL, PHP e JavaScript.
+Pré-requisitos </br>
+Antes de começar a usar este projeto, certifique-se de que você tenha o seguinte: </br>
+Servidor web (por exemplo, Apache, Nginx) configurado para executar PHP. </br>
+Acesso ao banco de dados ixcprovedor do ixc soft. </br>
+Conhecimento de HTML, CSS, SQL, PHP e JavaScript. </br>
 
 Instalação
 Clone este repositório para o seu ambiente de desenvolvimento:
