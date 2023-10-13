@@ -1,5 +1,5 @@
 # Dashboard de Usuários Offline
-##Este é um projeto feito para testar meus conhecimentos nas tecnologias e ferramentas utilizadas, o objetivo é criar um dashboard de usuários offline na rede usando dados filtrados do banco de dados IXC SOFT. Ele agrupa os clientes por cidades ou regiões pré-determinadas contando com uma interface moderna, intuitiva e dinamica.
+## Este é um projeto feito para testar meus conhecimentos nas tecnologias e ferramentas utilizadas, o objetivo é criar um dashboard de usuários offline na rede usando dados filtrados do banco de dados IXC SOFT. Ele agrupa os clientes por cidades ou regiões pré-determinadas contando com uma interface moderna, intuitiva e dinamica.
 Para provedores de internet que utilizam os sistemas IXC SOFT, pode ser útil para oferecer o suporte aos usuários com mais eficiencia ainda, o controle sobre problemas envolvendo desconexões na rede pode ser acompanhado em tempo real nesse painel junto aos detalhes da região selecionada, listando os usuários afetados e seus respectivos dados(horário da queda, endereço, telefone, concentrador, endereço MAC do dispositivo, registros de ordem de serviço em andamento).
 
 Pré-requisitos
